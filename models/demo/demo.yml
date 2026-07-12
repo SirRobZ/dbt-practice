@@ -20,6 +20,8 @@ models:
     description: "DBT Model for the customer table" 
   - name: customer_vw
     description: "DBT Model for the customer view" 
+  - name: sales
+    description: "DBT model for the sales table"  
 
 sources:
   - name: employee
@@ -32,3 +34,8 @@ sources:
     schema: DBT_SZARAPKAR
     tables:
       - name: CUSTOMER_SRC
+  - name: sales
+    database: PC_DBT_DB
+    schema: DBT_SZARAPKAR
+    tables:
+      - name: SALES_SRC
