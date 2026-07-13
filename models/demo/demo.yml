@@ -62,3 +62,8 @@ sources:
     schema: DBT_SZARAPKAR
     tables:
       - name: BASE_ORDERS
+  - name: patient
+    database: PC_DBT_DB
+    schema: DBT_SZARAPKAR
+    tables:
+      - name: PATIENT_SRC
